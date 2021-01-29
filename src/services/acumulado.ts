@@ -15,7 +15,6 @@ export default function CDIAcumulado(
     (endDate.getTime() - initDate.getTime()) / (24 * 3600 * 1000);
 
   const searchDate = initDate;
-  let indexDateFinded = 0;
   let CDIAcumulada = 1.0;
   const retorno = [];
 
@@ -26,29 +25,19 @@ export default function CDIAcumulado(
         cdiHistory.dtDate.toDateString() === searchDate.toDateString(),
     )[0];
 
+    searchDate.setDate(searchDate.getDate() + 1);
     if (cdiTax) {
       const cdiTaxInADate = TaxaCDI(cdiTax.dLastTradePrice);
 
       CDIAcumulada *= 1 + cdiTaxInADate * (cdbRate / 100);
 
-      console.log(
-        indexDateFinded,
-        cdiTax.dLastTradePrice,
-        cdiTaxInADate.toFixed(8),
-        CDIAcumulada.toFixed(16),
-      );
-
-      indexDateFinded += 1;
-
       retorno.push({
-        date: searchDate.toDateString(),
+        date: searchDate.toISOString(),
         unitPrice: parseFloat(
           (1000 * parseFloat(CDIAcumulada.toFixed(16))).toFixed(5),
         ),
       });
     }
-
-    searchDate.setDate(searchDate.getDate() + 1);
   }
 
   return retorno;
