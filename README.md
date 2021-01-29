@@ -39,3 +39,4 @@ Eg.
 ## The outputs are
 - Working days from Initial date to End date minus 1 day
 - Yield over R$ 1000.00
+
