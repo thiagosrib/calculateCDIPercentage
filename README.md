@@ -40,4 +40,5 @@ Eg.
 - Working days from Initial date to End date minus 1 day
 - Yield over R$ 1000.00
 
-![ScreenShot](https://drive.google.com/file/d/1ZyDmF6M471ITRX9f5j3Ge8sSJXmmEKfp/view?usp=sharing)
+## Application ScreenShot
+![ScreenShot](https://drive.google.com/file/d/1ZyDmF6M471ITRX9f5j3Ge8sSJXmmEKfp/view)
