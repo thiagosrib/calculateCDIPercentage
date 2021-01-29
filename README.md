@@ -41,4 +41,4 @@ Eg.
 - Yield over R$ 1000.00
 
 ## Application ScreenShot
-![ScreenShot](https://drive.google.com/file/d/1ZyDmF6M471ITRX9f5j3Ge8sSJXmmEKfp/view)
+[Screenshot](https://drive.google.com/file/d/1ZyDmF6M471ITRX9f5j3Ge8sSJXmmEKfp/view)
